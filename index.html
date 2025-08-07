@@ -19,10 +19,107 @@
     .share-btn-top { position: absolute; right: 10px; top: 0; background: none; border: none; color: #2563eb; font-size: 1rem; cursor: pointer; }
     .btn:hover { background: #2563eb; }
     .btn.whatsapp { background-color:#34A853; }
+        .whatspp-btn {
+  padding: 12px 10px;
+}
+
+.whatspp-btn .call-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.whatspp-btn .top-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.whatspp-btn .number {
+  font-size: 0.8rem;
+  color: #e6f4ea;
+  margin-top: 2px;
+}
     .btn.call { background-color: #25D366; }
+.call-btn {
+  padding: 12px 10px;
+}
+
+.call-btn .call-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.call-btn .top-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.call-btn .number {
+  font-size: 0.8rem;
+  color: #e6f4ea;
+  margin-top: 2px;
+}
+
     .btn.email { background-color: #EA4335; }
+    .email-btn {
+  padding: 12px 10px;
+}
+
+.email-btn .email-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.email-btn .top-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.email-btn .number {
+  font-size: 0.8rem;
+  color: #e6f4ea;
+  margin-top: 2px;
+}
     .btn.meeting { background-color: #FBBC05; }
     .btn.location { background-color: #4285F4; }
+    .call-btn {
+  padding: 12px 10px;
+}
+
+.location-btn .location-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.location-btn .top-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+.location-btn .number {
+  font-size: 0.8rem;
+  color: #e6f4ea;
+  margin-top: 2px;
+}
     .section-title { text-align: center; font-weight: bold; margin: 20px 0 10px; font-size: 1.1rem; }
     .socials, .highlights { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
     .social-btn, .highlight { background: #f0f4ff; padding: 10px; border-radius: 10px; width: 45%; text-align: center; font-size: 0.8rem; }
@@ -185,12 +282,42 @@
 
 <div class="card">
   <div class="button-grid">
-    <button class="btn call" onclick="window.location.href='tel:+91 94299 08944'"><i class="fas fa-phone"></i>Call</button>
+    <!--<button class="btn call" onclick="window.location.href='tel:+91 94299 08944'"><i class="fas fa-phone"></i>Call</button>
     <button class="btn whatsapp" onclick="window.open('https://wa.me/+919429908944')"><i class="fab fa-whatsapp"></i>WhatsApp</button>
     <button class="btn email" onclick="window.location.href='mailto:adv.mhr24@gmail.com'"><i class="fas fa-envelope"></i>Email</button>
     <button class="btn meeting" onclick="window.open('meetings.html')"><i class="fas fa-calendar-check"></i>Book Meeting
     <button class="btn location" onclick="window.open('https://www.google.com/maps/place/5QHX%2BR7H,+Prarthna+Sangh+Bhadrashram,+Athwalines,+Athwa,+Surat,+Gujarat+395007/@21.1795515,72.7158197,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3be04de380e25581:0x70ce8480c7c06524!2m2!1d72.7982045!2d21.1795958?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')">
-      <i class="fas fa-map-marker-alt"></i>Location</button>
+      <i class="fas fa-map-marker-alt"></i>Location</button>-->
+    <button class="btn call call-btn" onclick="window.location.href='tel:+919429908944'">
+  <div class="call-content">
+    <span class="top-line"><i class="fas fa-phone"></i> Call</span>
+    <span class="number">+91 94299 08944</span>
+  </div>
+</button>
+
+<button class="btn whatsapp whatspp-btn" onclick="window.open('https://wa.me/+919429908944')">
+    <div class="whatspp-content">
+    <span class="top-line"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+    <span class="number">+91 94299 08944</span>
+  </div>
+</button>
+
+    <button class="btn email email-btn" onclick="window.location.href='mailto:mhr.24@gmail.com'"> 
+     <div class="whatspp-content">
+    <span class="top-line"><i class="fas fa-envelope"></i> Email</span>
+    <span class="number">mhr.24@gmail.com</span>
+  </div>
+     </button>
+
+    <button class="btn meeting" onclick="window.open('meeting.html')"><i class="fas fa-calendar-check"></i>Book Meeting</button>
+   
+    <button class="btn location location-btn" onclick="window.open('https://www.google.com/maps/place/5QHX%2BR7H,+Prarthna+Sangh+Bhadrashram,+Athwalines,+Athwa,+Surat,+Gujarat+395007/@21.1795515,72.7158197,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3be04de380e25581:0x70ce8480c7c06524!2m2!1d72.7982045!2d21.1795958?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')">
+      <div class="whatspp-content">
+    <span class="top-line"><i class="fas fa-map-marker-alt"></i> Location</span>
+    <span class="number">Room no. 05, Surat district and sessions court, 
+Athwalines, Surat - 395007. </span>
+  </div>
+    </button>
     <div class="badge"> Please inform us in advance before visiting the office. </div>
   </div>
 </div>
@@ -297,12 +424,13 @@
               <div class="title">
                 Others <!--<span class="badge green">New</span>-->
               </div>
-              <div class="text">rent agreement - ભાડા કરાર 
-cast certificate - જાતિ પ્રમાણપત્ર
-income certificate - આવક પ્રમાણપત્ર
-ration card - રેશન કાર્ડ 
-passport -પાસપોર્ટ
-affidavit - સોગંદનામું
+              <div class="text">
+                <div></div>rent agreement - ભાડા કરાર </div>
+<div>cast certificate - જાતિ પ્રમાણપત્ર</div>
+<div>income certificate - આવક પ્રમાણપત્ર</div>
+<div>ration card - રેશન કાર્ડ </div>
+<div>passport -પાસપોર્ટ</div>
+<div>affidavit - સોગંદનામું</div>
             </div>
              <!-- <button class="learn-btn">Learn More</button>-->
             </div>
