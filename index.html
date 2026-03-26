@@ -6,6 +6,14 @@
   <link rel="icon" type="image/png" href="mhr__ok (1).jpg" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXX');
+  </script>
   <style>
     body {
       font-family: sans-serif;
@@ -420,7 +428,7 @@
 
   <div class="card">
     <div class="button-grid">
-      <button class="btn call call-btn" onclick="window.location.href='tel:+919429908944'">
+      <button class="btn call call-btn" onclick="trackCall(); window.location.href='tel:+919429908944'">
         <div class="call-content">
           <span class="top-line"><i class="fas fa-phone"></i> Call</span>
           <span class="number">+91 94299 08944</span>
@@ -1237,6 +1245,13 @@
     </div>
   </div>
   <div class="footer">@ Copyright MHR 2025 ALL RIGHTS RESERVED</div>
-  
+  <script>
+    function trackCall() {
+  gtag('event', 'click', {
+    event_category: 'Contact',
+    event_label: 'Call Button'
+  });
+}
+  </script>
 </body>
 </html>
